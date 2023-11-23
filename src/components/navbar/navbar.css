@@ -1,0 +1,147 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-links-logo{
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-links-logo img{
+    width: 62px;
+    height: 50px;
+}
+
+.navbar-links-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+}
+
+.navbar-member{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links-container p,
+.navbar-sign p,
+.navbar-menu-container p{
+    color: #FBE8D3;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar-links-container a:hover {
+    color: #FF7069;
+}  
+
+#navbar-member-button{
+    width: 95px;
+    height: 42px;
+    margin-top: 1.5rem;
+    align-items: center;         
+    font-size: 15px;   
+    font-weight: 500;         
+       
+    border: 1px solid #FF7069;               
+    border-radius: 5px;          
+    cursor: pointer;              
+    transition: background 0.1s;   
+
+    color: #FF7069;
+    background-color: transparent; 
+    
+}
+
+#navbar-member-button:hover {
+    color: #FBE8D3;              
+    background-color: #FF7069;   
+}
+
+.navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.navbar-menu svg{
+    cursor: pointer;
+}
+
+.navbar-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-menu-container p{
+    margin: 1rem 0;
+}
+
+#navbar-menu-member-button {
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+    .navbar-links-container{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .navbar{
+        padding: 2rem;
+    }
+
+    .navbar-member{
+        display: none;
+    }
+
+    .navbar-menu-container{
+        top: 20px;
+    }
+
+    #navbar-menu-member-button {
+        display: block;
+    }
+}

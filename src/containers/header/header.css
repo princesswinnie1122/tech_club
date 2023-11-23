@@ -1,0 +1,149 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-line {
+  display: flex;
+  align-items: flex-end;
+  width: 350px;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.header-title {
+    position: relative;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .title-1,
+  .title-4 {  
+    margin: 0; 
+    color: #FF7069;
+  }
+
+  .title-2,
+  .title-3 {
+    margin: 0; 
+    color: #FBE8D3;
+  }
+
+  .title-1,
+  .title-2 {
+    line-height: 1.2; 
+    margin-bottom: 5px; 
+  }
+
+  .header-ding-append {
+    position: absolute;
+    bottom: 72px;
+    left: 302px;
+    cursor: pointer;
+  }
+
+.title-ding{
+    color: #FF7069;
+    font-family: Rampart One;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    transform: rotate(-8deg);
+
+    display: flex;
+    position: relative;
+    bottom: -10px;
+}
+
+.header-slogan-container{
+  margin-top: 3.2rem;
+}
+
+.header-slogan{
+    display: inline;
+    margin: 0; 
+    color: rgba(251, 232, 211, 0.60);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#header-join-button {
+    display: flex;
+    padding: 12px 18px;
+    margin-top: 1.5rem;
+    width: 118px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--color-text);
+    color: var(--color-subtext);
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  #header-join-button:hover {
+    background-color: transparent; 
+    border:var(--color-text) solid 1px;
+    color: var(--color-text);
+  }
+  
+  .header-kids {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+  
+  .header-kids img{
+    width: 135%;
+    height: 108%;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .header-content {
+      margin: 0 0 3rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .header h1{
+      font-size: 48px;
+      line-height: 60px;
+    }
+    .header p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    #header-join-button{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+
+  
+
